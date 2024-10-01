@@ -1,4 +1,4 @@
-FROM openjdk:15-slim
+FROM openjdk:21-slim
 ARG CMAK_VERSION=3.0.0.6
 ADD https://github.com/yahoo/CMAK/releases/download/${CMAK_VERSION}/cmak-${CMAK_VERSION}.zip /cmak-${CMAK_VERSION}.zip
 RUN apt-get update && apt-get install -y unzip
